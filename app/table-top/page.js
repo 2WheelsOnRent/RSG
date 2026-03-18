@@ -1,7 +1,7 @@
 import TableTopGrid from "../components/TableTopGrid";
 
 export const metadata = {
-  title: "Table Top Stone Finishes | Prem Marbles",
+  title: "Table Top Stone Finishes | Rajasthan Stone Gallery",
   description: "Choose your natural stone table top. Spider Green, Cherry Gold, Marine Black Fantasy, Red Flamingo and more.",
 };
 

@@ -1,26 +1,16 @@
 "use client";
 
-import { useMemo, useState, useRef } from "react";
+import { useMemo } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useMenu } from "../hooks/useMenu";
 
 const INSTAGRAM_LINK = "https://www.instagram.com/rajasthanstone13?igsh=M2t4bzllbmkwb2p4";
 
-const ABOUT_DROPDOWN = [
-  { label: "Company Overview", href: "/about-us#company-overview" },
-  { label: "Our Team", href: "/about-us#team" },
-  { label: "Achievements", href: "/about-us#achievements" },
-  // { label: "CSR", href: "/about-us#csr" },
-  { label: "Infrastructure", href: "/about-us/infrastructure" },
-  { label: "Packaging", href: "/about-us/packaging" },
-];
-
 const NAV_ITEMS = [
-  { label: "About Us", href: "/about-us", children: ABOUT_DROPDOWN },
+  { label: "About Us", href: "/about-us" },
   { label: "Natural Stones", href: "/natural-stones" },
   { label: "Table Top", href: "/table-top" },
-  // { label: "Portfolio", href: "/#portfolio" },
   { label: "Contact Us", href: "/contact-us" },
 ];
 
@@ -62,21 +52,7 @@ const SOCIAL_LINKS = [
 
 export default function Header() {
   const { isOpen, toggleMenu, closeMenu, scrolled } = useMenu();
-  const [aboutOpen, setAboutOpen] = useState(false);
-  const closeTimeoutRef = useRef(null);
   const navItems = useMemo(() => NAV_ITEMS, []);
-
-  const handleAboutMouseEnter = () => {
-    if (closeTimeoutRef.current) {
-      clearTimeout(closeTimeoutRef.current);
-      closeTimeoutRef.current = null;
-    }
-    setAboutOpen(true);
-  };
-
-  const handleAboutMouseLeave = () => {
-    closeTimeoutRef.current = setTimeout(() => setAboutOpen(false), 150);
-  };
 
   return (
     <header className={`sticky top-0 z-50 bg-white transition-shadow duration-300 w-full min-w-0 header-no-scrollbar ${scrolled ? "shadow-md" : ""}`}>
@@ -112,41 +88,11 @@ export default function Header() {
         </Link>
 
         <div className="hidden md:flex items-center gap-6 lg:gap-8">
-          {navItems.map((item) =>
-            item.children ? (
-              <div
-                key={item.label}
-                className="relative py-1"
-                onMouseEnter={handleAboutMouseEnter}
-                onMouseLeave={handleAboutMouseLeave}
-              >
-                <Link href={item.href} className="text-[17px] font-normal text-[#000] hover:text-[#D4AF37] flex items-center gap-0.5">
-                  {item.label}
-                  <svg className={`w-4 h-4 transition-transform ${aboutOpen ? "rotate-180" : ""}`} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
-                </Link>
-                {aboutOpen && (
-                  <div className="absolute top-full left-0 pt-1.5 min-w-[220px] z-[100] overflow-visible">
-                    <div className="bg-white border border-gray-200 rounded-md shadow-xl py-1.5 ring-1 ring-black/5 overflow-visible">
-                      {item.children.map((sub) => (
-                        <Link
-                          key={sub.label}
-                          href={sub.href}
-                          onClick={() => { setAboutOpen(false); closeMenu(); }}
-                          className="block px-4 py-2.5 text-[15px] font-normal text-[#333] hover:bg-amber-50 hover:text-[#B8962E] border-b border-gray-100 last:border-b-0 transition-colors"
-                        >
-                          {sub.label}
-                        </Link>
-                      ))}
-                    </div>
-                  </div>
-                )}
-              </div>
-            ) : (
-              <Link key={item.label} href={item.href} onClick={() => closeMenu()} className="text-[17px] font-normal text-[#000] hover:text-[#D4AF37] relative after:absolute after:left-0 after:bottom-[-2px] after:w-0 after:h-0.5 after:bg-[#D4AF37] after:transition-all after:duration-300 hover:after:w-full">
-                {item.label}
-              </Link>
-            )
-          )}
+          {navItems.map((item) => (
+            <Link key={item.label} href={item.href} onClick={() => closeMenu()} className="text-[17px] font-normal text-[#000] hover:text-[#D4AF37] relative after:absolute after:left-0 after:bottom-[-2px] after:w-0 after:h-0.5 after:bg-[#D4AF37] after:transition-all after:duration-300 hover:after:w-full">
+              {item.label}
+            </Link>
+          ))}
         </div>
 
         <div className="flex items-center gap-4">
@@ -164,24 +110,11 @@ export default function Header() {
         <div className="absolute inset-0 bg-black/50" onClick={closeMenu} />
         <div className={`absolute top-0 right-0 h-full w-72 bg-white shadow-xl transition-transform duration-300 ease-out ${isOpen ? "translate-x-0" : "translate-x-full"}`}>
           <div className="flex flex-col pt-20 px-6 gap-1">
-            {navItems.map((item) =>
-              item.children ? (
-                <div key={item.label} className="py-2 border-b border-gray-100">
-                  <Link href={item.href} onClick={closeMenu} className="text-[#333] font-medium text-sm mb-2 block">{item.label}</Link>
-                  <div className="flex flex-col gap-1 pl-2">
-                    {item.children.map((sub) => (
-                      <Link key={sub.label} href={sub.href} onClick={closeMenu} className="text-[17px] font-normal text-[#000] py-1.5 hover:text-[#D4AF37]">
-                        {sub.label}
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-              ) : (
-                <Link key={item.label} href={item.href} onClick={closeMenu} className="text-[17px] font-normal text-[#000] py-2 border-b border-gray-100 hover:text-[#D4AF37]">
-                  {item.label}
-                </Link>
-              )
-            )}
+            {navItems.map((item) => (
+              <Link key={item.label} href={item.href} onClick={closeMenu} className="text-[17px] font-normal text-[#000] py-2 border-b border-gray-100 hover:text-[#D4AF37]">
+                {item.label}
+              </Link>
+            ))}
             <Link href="/#brochure" onClick={closeMenu} className="text-white bg-[#333] px-4 py-3 text-center font-semibold mt-4">
               BROCHURE →
             </Link>

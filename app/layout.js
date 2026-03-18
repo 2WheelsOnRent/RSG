@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Prem Marbles",
+  title: "Rajasthan Stone Gallery",
   description: "More Than Marble. A Legacy the World Trusts.",
 };
 

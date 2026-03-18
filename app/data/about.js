@@ -21,11 +21,11 @@ export const PACKAGING_IMAGES = [
   { id: 6, src: "https://images.unsplash.com/photo-1565000098222-d268f6b2d59f?w=400&h=300&fit=crop", alt: "Container loading" },
 ];
 
-export const INFRASTRUCTURE_TEXT = `At Prem Marbles Pvt. Ltd., we believe that excellence is built on the perfect synergy of three key pillars: Man, Machine and Material. By seamlessly integrating these elements, we are able to deliver unparalleled quality and service to our clients. Our commitment to innovation and precision is reflected in our state-of-the-art infrastructure. We boast exclusive quarries, strategically located to procure the finest quality marble, ensuring that each piece meets the highest standards.`;
+export const INFRASTRUCTURE_TEXT = `At Rajasthan Stone Gallery Pvt. Ltd., we believe that excellence is built on the perfect synergy of three key pillars: Man, Machine and Material. By seamlessly integrating these elements, we are able to deliver unparalleled quality and service to our clients. Our commitment to innovation and precision is reflected in our state-of-the-art infrastructure. We boast exclusive quarries, strategically located to procure the finest quality marble, ensuring that each piece meets the highest standards.`;
 
 export const PACKAGING_SUBTITLE = "Reliable, Secure and Efficient Packaging & Delivery - Adhering to Global Standards";
 export const PACKAGING_PARAS = [
-  "At Prem Marbles, we believe that the packaging of our products is just as important as the quality of the stones themselves. We never compromise on materials, ensuring every shipment is securely packed with the highest attention to detail. Our packing process is built on International standards, prioritizing both safety and precision.",
+  "At Rajasthan Stone Gallery, we believe that the packaging of our products is just as important as the quality of the stones themselves. We never compromise on materials, ensuring every shipment is securely packed with the highest attention to detail. Our packing process is built on International standards, prioritizing both safety and precision.",
   "We take great care in ensuring that random and custom-cut slab is carefully packed in robust, seaworthy, heavy-duty wooden frames. We understand that quality packing is essential to maintaining the integrity of your investment, and we go the extra mile to uphold your trust in us.",
 ];
 
@@ -37,7 +37,7 @@ export const CSR_ITEMS = [
 ];
 
 export const ACHIEVEMENTS_ITEMS = [
-  { year: "1983", title: "Foundation", description: "Prem Marbles Pvt. Ltd. established with a vision to deliver premium natural stone." },
+  { year: "1983", title: "Foundation", description: "Rajasthan Stone Gallery Pvt. Ltd. established with a vision to deliver premium natural stone." },
   { year: "40+", title: "Years of Excellence", description: "Decades of expertise in marble mining, processing, and global export." },
   { year: "22+", title: "Countries", description: "Serving clients across the globe with quality and reliability." },
 ];
@@ -45,25 +45,25 @@ export const ACHIEVEMENTS_ITEMS = [
 export const TEAM_MEMBERS = [
   {
     id: 1,
-    tag: "— THE PILLAR OF FOUNDATION",
-    name: "Mr. Parmeshwar Agrawal",
-    role: "Founder of Prem Marbles",
-    bio: "With over 40 years of unparalleled experience in the stone industry, Mr. Parmeshwar Agrawal is the driving force behind the foundation and growth of Prem Marbles. His expertise and passion for quality have been instrumental in shaping the company's legacy of success. Under his leadership, the organization has flourished, consistently pushing the boundaries of what's possible in the industry.",
-    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop",
+    tag: "— CO-FOUNDER",
+    name: "Mr. Lakshman Singh Rathore",
+    role: "Co-Founder, Rajasthan Stone Gallery",
+    bio: "With over 38 years of extensive experience in the marble and natural stone industry, Mr. Narpat Singh Rathore has built a strong foundation of trust, quality, and craftsmanship through his venture, Lucky Marble. His deep industry expertise and long-standing presence have established a solid reputation in the market.\n\nCarrying forward this legacy, the next generation has stepped into the business with a vision to scale and modernize operations. Under the guidance of his father, Lakshman Singh Rathore has recently joined the industry, bringing fresh perspective, energy, and a growth-driven approach.\n\nThe partnership with Rajasthan Stone Gallery is the result of long-term planning and a shared vision. With both factories aligned and working together from 2025 onwards, this collaboration marks a strategic move toward expansion and operational excellence.",
+    image: "/images/team/lakshman-singh-rathore.jpg",
     imageLeft: true,
   },
   {
     id: 2,
-    tag: "— THE VISIONARY OF TOMORROW",
-    name: "Mr. Karan Agrawal",
-    role: "Chairman of Prem Marbles",
-    bio: "Joining the business at a young age, Mr. Karan Agrawal brought with him fresh ideas, innovative thinking and a deep understanding of modern business practices. His visionary leadership, coupled with his keen insight into emerging trends and technologies, has introduced a dynamic blend of experience and forward-thinking strategy to Prem Marbles. Mr. Agrawal's contribution has been pivotal in steering the company toward new heights, ensuring that it remains at the forefront of the stone industry.",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop",
+    tag: "— FOUNDER",
+    name: "Mr. Sumer Singh Shekhawat",
+    role: "Founder, Rajasthan Stone Gallery (MBA – Finance & Marketing)",
+    bio: "Rajasthan Stone Gallery, founded by Mr. Sumer Singh Shekhawat (MBA – Finance & Marketing), is built on a strong legacy of 29 years in the granite industry. Backed by its own manufacturing unit, Supiyar Marble and Granite, the company ensures consistent quality, competitive pricing, and reliable delivery.\n\nWith a blend of experienced leadership and the next generation's 3 years of hands-on expertise, the brand stands as a trusted name for premium marble, granite, and natural stone solutions.",
+    image: "/images/team/sumer-singh-shekhawat.jpg",
     imageLeft: false,
   },
 ];
 
 export const COMPANY_OVERVIEW_PARAS = [
-  "Founded in 1983, Prem Marbles Pvt. Ltd. has emerged as a leader in the natural stone industry. Our expertise spans marble mining, processing, and manufacturing, with a distinct focus on the elegant flute finish. With flagship presence in Udaipur, Mumbai, and Silvassa, we extend our reach across India and beyond.",
+  "Founded in 1983, Rajasthan Stone Gallery Pvt. Ltd. has emerged as a leader in the natural stone industry. Our expertise spans marble mining, processing, and manufacturing, with a distinct focus on the elegant flute finish. With flagship presence in Udaipur, Mumbai, and Silvassa, we extend our reach across India and beyond.",
   "We offer an exclusive range of marble, granite, and stone products, distinguished by our unique flute finish that brings sophistication, refinement, and durability to residential and commercial projects—redefining the perception of natural stone globally.",
 ];

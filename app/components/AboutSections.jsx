@@ -129,7 +129,7 @@ export function TeamSection() {
     <section id="team" className={`bg-white ${SECTION_STYLE}`}>
       <SectionHeading title="Our Team" />
       <p className="text-[#333] leading-relaxed mb-12 max-w-3xl">
-        At Prem Marbles, our success is a reflection of the vision, dedication, and expertise of our leadership. Our team is built on a foundation of experience, innovation, and a shared commitment to excellence.
+        At Rajasthan Stone Gallery, our success is a reflection of the vision, dedication, and expertise of our leadership. Our team is built on a foundation of experience, innovation, and a shared commitment to excellence.
       </p>
       <div className="space-y-16">
         {TEAM_MEMBERS.map((member) => (
@@ -147,7 +147,9 @@ export function TeamSection() {
               <p className="text-red-600 uppercase tracking-wider text-xs font-semibold mb-2">{member.tag}</p>
               <h3 className="text-2xl font-bold text-[#333] mb-1">{member.name}</h3>
               <p className="text-gray-600 mb-4">{member.role}</p>
-              <p className="text-[#333] leading-relaxed">{member.bio}</p>
+              {member.bio.split("\n\n").map((para, i) => (
+                <p key={i} className="text-[#333] leading-relaxed mb-3 last:mb-0">{para}</p>
+              ))}
             </div>
           </div>
         ))}

@@ -2,7 +2,7 @@ import ContactUsSection from "../components/ContactUsSection";
 import Footer from "../components/Footer";
 
 export const metadata = {
-  title: "Contact Us | Prem Marbles",
+  title: "Contact Us | Rajasthan Stone Gallery",
   description: "Get in touch with us. Call, email, visit, or send a message.",
 };
 

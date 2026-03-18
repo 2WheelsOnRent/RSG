@@ -11,9 +11,9 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }) {
   const { id } = await params;
   const item = getTableTopById(id);
-  if (!item) return { title: "Table Top | Prem Marbles" };
+  if (!item) return { title: "Table Top | Rajasthan Stone Gallery" };
   return {
-    title: `${item.name} | Table Top | Prem Marbles`,
+    title: `${item.name} | Table Top | Rajasthan Stone Gallery`,
     description: item.description?.slice(0, 160),
   };
 }

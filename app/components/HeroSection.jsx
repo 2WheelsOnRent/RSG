@@ -22,7 +22,7 @@ export default function HeroSection() {
       <div className="relative z-10 flex flex-col items-center text-center px-4 py-12 sm:py-16 max-w-4xl mx-auto">
         <div className="flex items-center gap-3 sm:gap-4 mb-3 sm:mb-4">
           <span className="w-8 sm:w-12 h-0.5 bg-[#E6C76A] shrink-0" />
-          <p className="text-[#D4AF37] uppercase tracking-widest text-xs sm:text-sm font-semibold">Welcome to Prem Marbles</p>
+          <p className="text-[#D4AF37] uppercase tracking-widest text-xs sm:text-sm font-semibold">Welcome to Rajasthan Stone Gallery</p>
           <span className="w-8 sm:w-12 h-0.5 bg-[#E6C76A] shrink-0" />
         </div>
         <h1 className="text-xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-2 sm:mb-4">

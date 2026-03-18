@@ -98,20 +98,22 @@ export default function Footer() {
             <h3 className="text-center text-[#333] text-xl sm:text-2xl md:text-3xl font-bold mb-2">Our Global Presence</h3>
             <p className="text-center text-gray-600 text-sm sm:text-base mb-6 sm:mb-8">We supply premium marble to countries worldwide</p>
           </div>
-          <div className="overflow-hidden w-full">
-            <div className="flex items-stretch gap-3 sm:gap-5 md:gap-6 animate-clients-marquee w-max py-2 px-2">
+          <div className="relative w-full overflow-hidden">
+            <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-gray-50 to-transparent z-10 pointer-events-none" />
+            <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-gray-50 to-transparent z-10 pointer-events-none" />
+            <div className="flex items-stretch gap-4 sm:gap-6 animate-clients-marquee w-max py-2 px-4">
               {[...GLOBAL_PRESENCE_COUNTRIES, ...GLOBAL_PRESENCE_COUNTRIES].map((country, index) => (
                 <div
                   key={`${country.code}-${index}`}
-                  className="shrink-0 flex flex-col items-center text-center p-3 sm:p-4 bg-white rounded-lg shadow-sm border border-gray-100 w-[160px] sm:w-[210px] md:w-[260px] transition-all duration-300 ease-out hover:shadow-md hover:border-amber-200/60 relative"
+                  className="shrink-0 flex flex-col items-center text-center p-4 sm:p-5 bg-white rounded-lg shadow-sm border border-gray-100 w-[200px] sm:w-[240px] md:w-[280px] transition-all duration-300 ease-out hover:shadow-md hover:border-amber-200/60"
                 >
                   <img
                     src={`https://flagcdn.com/w80/${country.code}.png`}
                     alt={country.name}
                     className="w-10 h-6 sm:w-12 sm:h-8 object-cover rounded mb-2 sm:mb-3"
                   />
-                  <h4 className="font-semibold text-[#333] text-xs sm:text-sm md:text-base mb-1 leading-tight">{country.name}</h4>
-                  <p className="text-gray-600 text-[10px] sm:text-xs md:text-sm leading-snug">{country.description}</p>
+                  <h4 className="font-semibold text-[#333] text-sm md:text-base mb-1 leading-tight">{country.name}</h4>
+                  <p className="text-gray-600 text-xs md:text-sm leading-snug">{country.description}</p>
                 </div>
               ))}
             </div>
@@ -124,7 +126,7 @@ export default function Footer() {
             {/* Column 1: Logo, description, social */}
             <div className="space-y-4">
               <Link href="/" className="inline-block">
-                <Image src="/logo.png" alt="Prem Marbles" width={260} height={52} className="h-10 w-auto max-h-12 object-contain object-left" />
+                <Image src="/logo.png" alt="Rajasthan Stone Gallery" width={260} height={52} className="h-10 w-auto max-h-12 object-contain object-left" />
               </Link>
               <p className="text-gray-300 text-sm leading-relaxed">
                 WELCOME TO RAJASTHAN STONE GALLERY
@@ -225,8 +227,7 @@ export default function Footer() {
         <section className="bg-[#252525] py-4 px-4 w-full">
           <div className="w-full" style={{ maxWidth: 1510, marginLeft: "auto", marginRight: "auto" }}>
             <p className="text-center text-gray-400 text-sm">
-              Copyright 2026 - {new Date().getFullYear()} RAJASTHAN STONE GALLERY.
-              All Rights Reserved.
+              © {new Date().getFullYear()} Rajasthan Stone Gallery. All Rights Reserved.
             </p>
           </div>
         </section>

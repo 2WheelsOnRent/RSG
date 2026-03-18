@@ -11,9 +11,9 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }) {
   const { id } = await params;
   const stone = getStoneById(id);
-  if (!stone) return { title: "Natural Stone | Prem Marbles" };
+  if (!stone) return { title: "Natural Stone | Rajasthan Stone Gallery" };
   return {
-    title: `${stone.name} | Natural Stone | Prem Marbles`,
+    title: `${stone.name} | Natural Stone | Rajasthan Stone Gallery`,
     description: stone.shortDescription || stone.description?.slice(0, 160),
   };
 }

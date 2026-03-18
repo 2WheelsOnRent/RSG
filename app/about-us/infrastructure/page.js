@@ -2,7 +2,7 @@ import { InfrastructureSection } from "../../components/AboutSections";
 import Footer from "../../components/Footer";
 
 export const metadata = {
-  title: "Infrastructure | About Us | Prem Marbles",
+  title: "Infrastructure | About Us | Rajasthan Stone Gallery",
   description: "Our state-of-the-art infrastructure, quarries and facilities.",
 };
 

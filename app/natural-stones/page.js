@@ -1,7 +1,7 @@
 import NaturalStonesGrid from "../components/NaturalStonesGrid";
 
 export const metadata = {
-  title: "Natural Stone Finishes | Prem Marbles",
+  title: "Natural Stone Finishes | Rajasthan Stone Gallery",
   description: "Choose your natural stone. Explore our premium marble and granite finishes.",
 };
 
