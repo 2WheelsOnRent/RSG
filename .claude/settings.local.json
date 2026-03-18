@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -n \"price\\\\|₹\\\\|Price\" /home/webexpert/Documents/testcase/TestingMarvel-main/client/marbel-next-app/app/natural-stones/[id]/page.js)",
+      "Bash(grep -n \"price\\\\|₹\\\\|Price\" /home/webexpert/Documents/testcase/TestingMarvel-main/client/marbel-next-app/app/table-top/[id]/page.js)"
+    ]
+  }
+}
