@@ -4,21 +4,19 @@
 export const INFRASTRUCTURE_IMAGES = [
   { id: 1, src: "/images/infrastructure/1.png", alt: "Industrial facility exterior" },
   { id: 2, src: "/images/infrastructure/2.png", alt: "Factory interior with marble slabs" },
-  { id: 3, src: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=400&fit=crop", alt: "Factory interior" },
-  { id: 4, src: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=400&h=400&fit=crop", alt: "Industrial machinery" },
-  { id: 5, src: "https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=400&h=400&fit=crop", alt: "Processing equipment" },
-  { id: 6, src: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=400&h=400&fit=crop", alt: "Stone cutting" },
-  { id: 7, src: "https://images.unsplash.com/photo-1605640840605-14ac1859527b?w=400&h=400&fit=crop", alt: "Raw material storage" },
-  { id: 8, src: "https://images.unsplash.com/photo-1607400201889-565b1ee75f8e?w=400&h=400&fit=crop", alt: "Quarry operations" },
+  { id: 3, src: "/images/infrastructure/industryImage.jpeg", alt: "Industry operations" },
+  { id: 4, src: "/images/infrastructure/photo_6192830473168424735_y.jpg", alt: "Stone processing unit" },
+];
+
+export const INFRASTRUCTURE_VIDEOS = [
+  { id: 1, src: "/images/infrastructure/document_6192830472708431096.mp4", alt: "Factory operations" },
+  { id: 2, src: "/images/infrastructure/document_6192830472708431097.mp4", alt: "Stone cutting process" },
+  { id: 3, src: "/images/infrastructure/document_6192830472708431098.mp4", alt: "Manufacturing unit" },
+  { id: 4, src: "/images/infrastructure/document_6192830472708431099.mp4", alt: "Processing facility" },
 ];
 
 export const PACKAGING_IMAGES = [
-  { id: 1, src: "https://images.unsplash.com/photo-1565000098222-d268f6b2d59f?w=400&h=300&fit=crop", alt: "Shipping container" },
-  { id: 2, src: "https://images.unsplash.com/photo-1601597111158-2fceff292cdc?w=400&h=300&fit=crop", alt: "Wooden crates" },
-  { id: 3, src: "https://images.unsplash.com/photo-1553413077-190dd305871c?w=400&h=300&fit=crop", alt: "Packaged slabs" },
-  { id: 4, src: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=400&h=300&fit=crop", alt: "Secure packaging" },
-  { id: 5, src: "https://images.unsplash.com/photo-1601597111158-2fceff292cdc?w=400&h=300&fit=crop", alt: "Heavy-duty frames" },
-  { id: 6, src: "https://images.unsplash.com/photo-1565000098222-d268f6b2d59f?w=400&h=300&fit=crop", alt: "Container loading" },
+  { id: 1, src: "/images/packaging/1.png", alt: "Secure stone packaging" },
 ];
 
 export const INFRASTRUCTURE_TEXT = `At Rajasthan Stone Gallery Pvt. Ltd., we believe that excellence is built on the perfect synergy of three key pillars: Man, Machine and Material. By seamlessly integrating these elements, we are able to deliver unparalleled quality and service to our clients. Our commitment to innovation and precision is reflected in our state-of-the-art infrastructure. We boast exclusive quarries, strategically located to procure the finest quality marble, ensuring that each piece meets the highest standards.`;
@@ -64,6 +62,7 @@ export const TEAM_MEMBERS = [
 ];
 
 export const COMPANY_OVERVIEW_PARAS = [
-  "Founded in 1983, Rajasthan Stone Gallery Pvt. Ltd. has emerged as a leader in the natural stone industry. Our expertise spans marble mining, processing, and manufacturing, with a distinct focus on the elegant flute finish. With flagship presence in Udaipur, Mumbai, and Silvassa, we extend our reach across India and beyond.",
-  "We offer an exclusive range of marble, granite, and stone products, distinguished by our unique flute finish that brings sophistication, refinement, and durability to residential and commercial projects—redefining the perception of natural stone globally.",
+  "Rajasthan Stone Gallery stands as a distinguished name in the world of natural stone, offering an exclusive selection of premium marble, granite, and architectural stone surfaces defined by elegance, strength, and timeless appeal. Established in 2026, we are backed by our own state-of-the-art manufacturing facility and a robust supply network, maintaining uncompromising standards in quality, precision, and consistency.",
+  "Our expertise lies in the precision manufacturing of marble and granite tiles, with advanced processing techniques and strict quality control at every stage. We offer customized dimensions, including export-grade sizes, tailored to meet the requirements of both domestic and international markets.",
+  "With seamless logistics and a strong distribution presence, Rajasthan Stone Gallery ensures reliable supply across India, while also catering to large-scale and bulk requirements with efficiency and discretion.",
 ];
